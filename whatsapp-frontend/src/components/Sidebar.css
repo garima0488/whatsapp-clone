@@ -1,4 +1,4 @@
-.sidebar {
+/* .sidebar {
     display: flex;
     flex-direction: column;
   border-right: 1px solid #ddd;
@@ -27,7 +27,7 @@
   background-color: white;
     /* background-color: #f0f0f0 transparent; */
     
-  }
+  /* }
             
 .chat-list-item:hover {
   background-color: #e5e5e5;
@@ -37,8 +37,8 @@
   background-color: #e5e5e5;
   font-weight: bold;
   
-}
-.chat-list-item {
+} */
+/* .chat-list-item {
   
   justify-content: space-between;
   align-items: center;
@@ -58,4 +58,82 @@
   padding: 10px;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
+} */ 
+
+/* Sidebar.css */
+/* Sidebar.css */
+
+.sidebar {
+  /* width: 320px;
+  height: 100vh; */
+  /* background-color: #ffffff; pure white */
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.sidebar-header {
+  height: 60px;
+  background-color: #ffffff; /* WhatsApp green */
+  color: black;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  user-select: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(169, 173, 167, 0.813); 
+}
+
+.chat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+  border-right: 1px solid rgba(169, 173, 167, 0.813); 
+}
+
+.chat-list-item {
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.2s ease;
+}
+
+.chat-list-item:hover {
+  background-color: #e5f1f0; /* light teal on hover */
+}
+
+.chat-list-item.active {
+  background-color: #e5f1f0; /* WhatsApp bright green */
+  color: white;
+  font-weight: 600;
+}
+
+.chat-list-item.active:hover {
+  background-color: #e5f1f0; /* slightly darker green on hover */
+}
+
+.chat-name {
+  font-size: 16px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000000; /* black chat names */
+}
+
+.chat-last {
+  font-size: 13px;
+  color: #333333; /* dark gray for last message */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
